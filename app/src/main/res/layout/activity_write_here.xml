@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:textAlignment="center"
+    tools:context=".write_Here">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Article"
+        android:textColor="#000000"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/_author"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:hint="Author"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+            app:hintTextColor="@color/black"
+            android:paddingBottom="5dp"
+            android:layout_marginRight="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/_category"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+            app:hintTextColor="@color/black"
+            android:paddingBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/_title"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textColorHint="#000000"
+        app:boxStrokeColor="#000000"
+        app:hintTextColor="@color/black"
+        android:paddingBottom="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="#000000"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="buttonBold"
+            android:text="BOLD"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="buttonItalics"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="ITALIC"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="buttonUnderline"
+            android:text="UNDERLINE"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="buttonAlignLeft"
+            android:text="LEFT"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="buttonAlignCenter"
+            android:text="CENTER"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="buttonAlignRight"
+            android:text="RIGHT"
+            android:textColor="@color/black" />
+    </GridLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/_article"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Article"
+        android:textColorHint="#000000"
+        app:boxStrokeColor="#000000"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="buttonNoFormat"
+            android:text="NO FORMATTING"
+            android:textColor="@color/black" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="back"
+            android:text="BACK"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/_publish"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="publish"
+            android:text="PUBLISH"
+            android:textColor="@color/black" />
+    </GridLayout>
+
+</LinearLayout>

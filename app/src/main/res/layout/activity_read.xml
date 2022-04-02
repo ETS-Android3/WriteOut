@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".Read">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/wakanda"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profile_Img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/profile_big" 
+                android:onClick="back2"/>
+
+            <TextView
+                android:id="@+id/authorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="150dp"
+                android:layout_toRightOf="@id/profile_Img"
+                android:background="@drawable/search_bg"
+                android:fontFamily="sans-serif-black"
+                android:includeFontPadding="false"
+                android:padding="10dp"
+                android:text="BIJAY KUMAR SOREN"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/readTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/search_bg"
+                android:fontFamily="sans-serif-black"
+                android:includeFontPadding="false"
+                android:padding="10dp"
+                android:text="TITLE"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="All the content of article will appear here. This was the part of RecyclerView onClick listner. It is incomplete due to shortage of time."
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+    </ScrollView>
+
+
+
+</LinearLayout>
