@@ -1,16 +1,12 @@
 package com.example.writeout;
 
 public class UserHelperClass {
-    private String name;
-    private String username;
-    private String email;
-    private String phoneNo;
-    private String password;
+    String name, username, email, phoneNo, password;
 
-    public UserHelperClass(String toString1, String s1, String string, String toString, String s){
+    public UserHelperClass(){
     }
 
-    public UserHelperClass(String name, String username) {
+    public UserHelperClass(String name, String username, String email, String phoneNo, String password) {
         this.name = name;
         this.username = username;
         this.email = email;
